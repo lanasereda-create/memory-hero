@@ -79,7 +79,7 @@
             searchBtn.disabled = true;
             searchBtn.textContent = 'Создаю историю...';
             try {
-                const response = await fetch('http://127.0.0.1:8090/generate', {
+                const response = await fetch('https://memory-hero-ap-lanasereda947.amvera.io/generate', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ fio, birthYear, place, extra })
